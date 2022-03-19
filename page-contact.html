@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Blog</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sp.css">
+</head>
+
+<body>
+  <!-- header================================================== -->
+  <header>
+    <h1 class="header-title wrapper">
+      <a href="">Travel Blog</a>
+    </h1>
+    <nav>
+      <ul class="header-nav wrapper flex">
+        <li><a href="">NEW</a></li>
+        <li><a href="">COLUMN</a></li>
+        <li><a href="">SERIES</a></li>
+        <li><a href="">Q&A</a></li>
+        <li><a href="">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- main================================================== -->
+  <main>
+    <!-- contact-page--------------------------------------- -->
+    <div class="wrapper">
+      <!-- form -->
+      <form action="" method="post">
+        <!-- (名前：テキストフィールド) -->
+        <label for="yourname" class="form-bold">お名前</label>
+        <span class="required">*必須</span>
+        <input type="text" name="yourname" id="yourname" placeholder="　山田　太郎" class="form-input">
+        <!-- （年齢：ラジオボタン） -->
+        <div class="form-age">
+          <p class="form-bold">年齢を選択してください。</p>
+          <label for="teens">10代</label>
+          <input type="radio" id="teens" name="age" value="teens">
+
+          <label for="twenties">20代</label>
+          <input type="radio" id="twenties" name="age" value="twenties">
+
+          <label for="thirties">30代</label>
+          <input type="radio" id="thirties" name="age" value="thirties">
+
+          <label for="forties">40代</label>
+          <input type="radio" id="forties" name="age" value="forties">
+
+          <label for="fifties">50代</label>
+          <input type="radio" id="fifties" name="age" value="fifties">
+
+          <label for="sixties">60代</label>
+          <input type="radio" id="sixties" name="age" value="sixties">
+
+          <label for="seventies">70代以上</label>
+          <input type="radio" id="seventies" name="age" value="seventies">
+        </div>
+
+        <!-- （職業：チェックボックス） -->
+        <div class="form-job">
+          <p class="form-bold">ご職業を選択してください。</p>
+          <label for="student">学生</label>
+          <input type="checkbox" id="student" name="job" value="student">
+
+          <label for="officeworker">会社員・公務員</label>
+          <input type="checkbox" id="officeworker" name="job" value="officeworker">
+
+          <label for="selfemployed">自営業・フリーランス</label>
+          <input type="checkbox" id="selfemployed" name="job" value="selfemployed">
+
+          <label for="houseworker">主婦・主夫</label>
+          <input type="checkbox" id="houseworker" name="job" value="houseworker">
+
+          <label for="unemployed">無職</label>
+          <input type="checkbox" id="unemployed" name="job" value="unemployed">
+        </div>
+        <!-- （メールアドレス：テキストフィールド） -->
+        <label for="email" class="form-bold">メール</label>
+        <span class="required">*必須</span>
+        <input type="email" name="email" id="email" placeholder="　〇〇〇＠✕✕.com" class="form-input">
+
+        <!-- （電話：テキストフィールド） -->
+        <label for="tel" class="form-bold">お電話番号</label>
+        <input type="number" name="tel" id="tel" placeholder="　09012345678( - ハイフンは不要です。)" class="form-input">
+
+        <!-- （問い合わせ内容の種類：セレクトボックス） -->
+        <div class="form-select">
+          <label for="genre" class="form-bold">お問い合わせ内容について</label>
+          <span class="required">*必須</span>
+          <select name="genre" id="genre">
+            <option value="comment">サイトのご感想・ご意見</option>
+            <option value="interview">サイト著者への取材依頼</option>
+            <option value="offer">サイト著者へのお仕事依頼</option>
+            <option value="etc">その他</option>
+          </select>
+        </div>
+
+        <!-- （問い合わせ内容：テキストエリア） -->
+        <label for="message" class="form-bold">お問い合わせ</label>
+        <span class="required">*必須</span>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="　ご自由にご記入ください。"
+          class="form-textarea"></textarea>
+
+        <div class="form-btns flex">
+          <!-- 確認ボタン・戻るボタン -->
+          <input type="confirm" value="確認する" class="confirm-btn">
+          <!-- 送信ボタン -->
+          <input type="submit" value="送信する" class="submit-btn">
+        </div>
+      </form>
+    </div>
+    <!-- topへ戻るボタン（JS） -->
+    <a href="#" id="top-btn">
+      <span class="material-icons">
+        vertical_align_top
+      </span>
+    </a>
+  </main>
+  <!-- footer================================================== -->
+  <footer>
+    <!-- footer-contents----------------------- -->
+    <div class="footer wrapper flex">
+      <div class="footer-about">
+        <h3>About</h3>
+        <p>
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        </p>
+        <ul>
+          <li><a href="">プロフィール紹介</a></li>
+          <li><a href="">お仕事の依頼</a></li>
+          <li><a href="">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="footer-menu">
+        <h3>Menu</h3>
+        <li><a href="">NEW</a></li>
+        <li><a href="">CATEGORY</a></li>
+        <li><a href="">COLUMN</a></li>
+        <li><a href="">SERIES</a></li>
+        <li><a href="">Q&A</a></li>
+      </div>
+      <div class="footer-twitter">
+        <h3>Twitter</h3>
+        <!-- twitter埋込 -->
+        <img src="images/blank_320×320.jpg" alt="">
+      </div>
+    </div>
+    <!-- copyright---------------------------- -->
+    <p id="copyright">&copy; Travel Blog</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
